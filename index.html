@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 300px;
+    padding: 16px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+input[type=text], input[type=password], input[type=email], input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <label for="uname"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="uname" required>
+
+    <label for="uemail"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="uemail" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+    <label for="age"><b>Age</b></label>
+    <input type="tel" placeholder="Enter Age" name="age" required>
+
+    <label for="gender"><b>Gender</b></label>
+    <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+
+    <label for="hobbies"><b>Hobbies</b></label>
+    <br>
+    <input type="checkbox" name="hobbies" value="Reading"> Reading<br>
+    <input type="checkbox" name="hobbies" value="Music"> Music<br>
+    <input type="checkbox" name="hobbies" value="Gardening"> Gardening<br>
+    <input type="checkbox" name="hobbies" value="Playing Games"> Playing Games<br>
+
+    <label for="comments"><b>Comments</b></label>
+    <br>
+    <textarea name="comments" rows="4" cols="40"></textarea>
+    <br>
+    <input type="submit" value="Submit">
+</div>
+
+</body>
+</html>
